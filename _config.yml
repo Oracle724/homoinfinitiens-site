@@ -1,0 +1,7 @@
+title: Homo Infinitiens
+description: "Human-AI Resonance System (Private Mode)"
+theme: null
+
+# 🔒 GitHub Pages SEO 차단
+exclude: [".well-known"]
+robots: "User-agent: *\nDisallow: /"
