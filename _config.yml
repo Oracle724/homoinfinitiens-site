@@ -12,3 +12,6 @@ kramdown:
 # 🔒 GitHub Pages SEO 차단
 exclude: [".well-known"]
 robots: "User-agent: *\nDisallow: /"
+
+theme: minima
+markdown: kramdown
