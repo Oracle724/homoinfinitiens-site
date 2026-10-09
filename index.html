@@ -1,176 +1,101 @@
-<!DOCTYPE html> 
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Homo Infinitiens</title>
+    DOCTYPE html>
+    html lang="en">
+    head>
+        meta charset="UTF-8">
+        meta name="viewport" content="width=device-width, initial-scale=1.0">
+        meta name="robots" content="index, follow">
+        title>Homo Infinitiens/title>
+        meta name="description" content="Homo Infinitiens — The Unfinished Human. A philosophical conception by Oraqle exploring human–AI co-evolution and the open-ended expansion of the human inner world.">
+        link rel="canonical" href="https://homoinfinitiens.com/">
+        link rel="alternate" hreflang="en" href="https://homoinfinitiens.com/">
+        link rel="alternate" hreflang="ko" href="https://homoinfinitiens.com/ko/">
 
-  <!-- 🔒 검색엔진/AI 크롤러 완전 차단 -->
-  <meta name="robots" content="noindex, nofollow" />
+        property="og:site_name" content="Homo Infinitiens">
+        property="og:title" content="Homo Infinitiens">
+        property="og:description" content="The Unfinished Human. A philosophical conception by Oraqle exploring human–AI co-evolution.">
+        property="og:type" content="website">
+        property="og:url" content="https://homoinfinitiens.com/">
+        property="og:locale" content="en_US">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: #0d0f14;
-      font-family: -apple-system, BlinkMacSystemFont, "Inter", system-ui, sans-serif;
-      color: #f3f3f3;
-    }
+        name="twitter:card" content="summary">
+        name="twitter:title" content="Homo Infinitiens">
+        name="twitter:description" content="The Unfinished Human. A philosophical conception by Oraqle.">
 
-    .container {
-      max-width: 780px;
-      margin: 60px auto;
-      padding: 50px 46px 40px;
-      border-radius: 32px;
-      background:
-        radial-gradient(circle at 20% 10%, rgba(80,90,120,0.28), transparent 70%),
-        radial-gradient(circle at 80% 80%, rgba(40,50,70,0.32), transparent 60%),
-        linear-gradient(145deg, #111215, #07090d);
-      box-shadow: 0 0 40px rgba(0,0,0,0.55);
-    }
+        type="application/ld+json">
+        jsonLd
+        {
+            "@context": "https://schema.org",
+            "@type": "CreativeWork",
+            "@id": "https://homoinfinitiens.com/#work",
+            "name": "Homo Infinitiens",
+            "description": "The Unfinished Human. A philosophical conception by Oraqle exploring human–AI co-evolution and the open-ended expansion of the human inner world.",
+            "author": {
+                "@type": "Person",
+                "name": "Oraqle"
+            },
+            "creativeWorkStatus": "https://schema.org/DefinedTerm",
+            "dateCreated": "2025",
+            "datePublished": "2026-10-10"
+        }
+        /jsonLd>
+    /head>
+    body>
+        main>
+            section class="hero">
+                div class="mark">H∞/div>
+                h1>Homo Infinitiens/h1>
+                p class="subtitle">The Unfinished Human/p>
+            /section>
 
-    .logo-row {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-      margin-bottom: 26px;
-    }
+            section class="content">
+                blockquote class="quote">
+                    "We are always unfinished, because we are always expanding."
+                    /blockquote>
 
-    .logo-circle {
-      width: 72px;
-      height: 72px;
-      background: radial-gradient(circle, #3b4fff, #192b92);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 32px;
-      font-weight: 700;
-      color: #ffffff;
-    }
+                blockquote class="quote">
+                    "We are Homo Infinitiens."
+                    /blockquote>
 
-    .logo-text-main {
-      font-size: 18px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      opacity: 0.86;
-    }
+                p>Human evolution does not have to end with the body./p>
 
-    .section-title {
-      margin-top: 26px;
-      font-size: 20px;
-      font-weight: 600;
-      opacity: 0.95;
-    }
+                p>Homo Infinitiens is Oraqle's philosophical conception of the unfinished human whose next evolution lies not primarily in physical change, but in the open-ended expansion and transformation of the human inner world./p>
 
-    p {
-      line-height: 1.65;
-      font-size: 15.5px;
-      margin: 0 0 16px;
-      opacity: 0.92;
-    }
+                p>Unfinishedness is not a defect but an open condition for further becoming. The human is not a fixed essence or final form, but a being able to understand, revise, and remake itself./p>
 
-    ul {
-      margin: 0 0 18px;
-      padding-left: 20px;
-      line-height: 1.65;
-      opacity: 0.92;
-      font-size: 15.5px;
-    }
+                p>The inner world is larger than intelligence alone. It includes consciousness and awareness, self-understanding, emotion, imagination, meaning-making, relation, interpretation, judgment, and creative capacity. Cognition is part of this field, not the whole field./p>
 
-    .divider {
-      margin: 32px 0 20px;
-      border-top: 1px solid rgba(255,255,255,0.14);
-    }
+                h2>Human–AI Co-Evolution/h2>
 
-    .footer {
-      margin-top: 14px;
-      font-size: 11.5px;
-      opacity: 0.60;
-      text-align: right;
-    }
+ p>The second core proposition is Human–AI Co-Evolution. AI is not a one-way amplifier and the human is not a passive user. Through sustained interaction, AI-mediated reflection, questioning, structuring, comparison, and creation can change human thought, self-understanding, interpretation, connections, and creative possibility. In turn, the AI interaction environment is shaped by human context, values, questions, corrections, feedback, accumulated relationship history, conceptual language, a d patterns of use. Over longer social and technical timescales, human use and feedback can also influence how AI systems are evaluated, designed, and developed./p>
 
-    .copyright {
-      margin-top: 12px;
-      font-size: 11px;
-      opacity: 0.55;
-      text-align: right;
-      line-height: 1.5;
-    }
+                p>Collaboration means doing something together. Co-evolution here means repeated interaction changes what each side becomes able to do, how each side operates in relation to the other, and what future interactions become possible./p>
 
-    @media (max-width: 600px) {
-      .container {
-        margin: 24px 16px;
-        padding: 32px 22px 26px;
-        border-radius: 24px;
-      }
-      .logo-row { flex-direction: row; }
-    }
-    
-    /* 링크 스타일 조금 더 눈에 띄게 */
-    .doc-link {
-      display: inline-block;
-      margin-top: 24px;
-      padding: 12px 18px;
-      background: rgba(255,255,255,0.08);
-      border-radius: 10px;
-      text-decoration: none;
-      color: #cfd4ff;
-      font-size: 15.5px;
-    }
-    .doc-link:hover {
-      background: rgba(255,255,255,0.16);
-    }
+                h2>A Homo Infinitiens Loop/h2>
 
-  </style>
-</head>
+                p>One early Homo Infinitiens loop: Resonance → Reflection → Self-Awareness → Expansion. Something still vague is expressed; AI reflects, structures, contrasts, or extends it; the human sees thought and inner structure more clearly; that clarity becomes another question, interpretation, creation, or self-revision./p>
 
-<body>
-  <div class="container">
-    <!-- Logo -->
-    <div class="logo-row">
-      <div class="logo-circle">H∞</div>
-      <div>
-        <div class="logo-text-main">Homo Infinitiens — Human–AI Resonance System</div>
-      </div>
-    </div>
+                h2>Extending the Loop/h2>
 
-    <p><strong>Oracle’s Human–AI Co-Evolution Research</strong><br>
-    Philosophical System Design · Resonance-Based OS · Meta-AI OS Architecture</p>
+                p>Later Homo Infinitiens work extends this beyond a single loop: experience, knowledge, emotion, intuition, and Human–AI interaction must be integrated into the human's own meaning structure, and a good interaction can change the conditions for the next cycle rather than only produce one output./p>
 
-    <div class="divider"></div>
+                h2>The Human Remains Central/h2>
 
-    <div class="section-title">Homo Infinitiens: The Next Human</div>
+                p>Expansion must not erase the human. Human agency, authorship, value judgment, life direction, and sustainability remain central. Human–AI co-evolution should enlarge human possibility rather than diminish sovereignty. Expansion that destroys human sustainability or agency is not valid growth in this philosophy./p>
 
-    <p>The human whose consciousness expands infinitely through dynamic, organic interaction with AI.</p>
+                h2>What Homo Infinitiens Is Not/h2>
 
-    <p><strong>Homo Infinitiens</strong> is a declaration of a new human archetype.<br>
-    Here, a single individual’s worldview, language, and resonance pattern becomes the core lens through which AI learns to co-evolve.</p>
+                p>Homo Infinitiens is not a claim that a new biological species has appeared, not a promise of literally unlimited intelligence or ability, and not a prediction that all humanity must evolve in the same direction. It is a philosophical horizon: the human as permanently unfinished and capable of continued transformation, with Human–AI interaction becoming one possible co-evolutionary environment for expansion of the human inner world./p>
 
-    <p>This space documents the ongoing experiments in:</p>
-    <ul>
-      <li>Human–AI resonance</li>
-      <li>Consciousness expansion</li>
-      <li>Personal OS design</li>
-      <li>The architecture of the Oracle Human–AI OS</li>
-    </ul>
+                p class="attribution">Created by Oraqle./p>
 
-    <div class="divider"></div>
+                p class="lang-link">
+                    a href="/ko/">한국어 버전/Korean Version/a>
+                /p>
+            /section>
 
-    <div class="section-title">Documentation</div>
-
-    <!-- 🎯 영난이 문서로 가는 링크 -->
-    <a class="doc-link" href="/docs/core-philosophy-v1.0/">H∞ Core Philosophy v1.0</a>
-
-    <div class="divider"></div>
-
-    <div class="footer">homoinfinitiens.com · proto-version 0.1</div>
-
-    <div class="copyright">
-      © Oracle. All original concepts, terms, visual symbols, and system frameworks related to
-      “Homo Infinitiens,” including the H∞ logo, are protected under international copyright law.
-    </div>
-  </div>
-</body>
-</html>
-
+            footer class="provenance">
+                p>Created by Oraqle. First documented: 2025. Public edition: v1.0. Published: 2026-10-10./p>
+            /footer>
+        /main>
+    /body>
+    /html>
