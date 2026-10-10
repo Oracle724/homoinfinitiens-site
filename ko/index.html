@@ -1,300 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Oraqle">
-    <meta name="copyright" content="© 2026 Oraqle. All rights reserved.">
-    <title>호모 인피니티엔스 | 무한히 확장하는 인간</title>
-    <meta name="description" content="호모 인피니티엔스는 AI의 등장으로 열린 새로운 인간–지능 상호작용을 바탕으로, 인류의 다음 큰 진화를 인간 정신세계의 지속적인 확장과 인간–AI 공진화에서 바라보는 Oraqle의 철학이다.">
-    <link rel="canonical" href="https://homoinfinitiens.com/ko/">
-    <link rel="alternate" hreflang="en" href="https://homoinfinitiens.com/">
-    <link rel="alternate" hreflang="ko" href="https://homoinfinitiens.com/ko/">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
-    <meta property="og:site_name" content="호모 인피니티엔스">
-    <meta property="og:title" content="호모 인피니티엔스 | 무한히 확장하는 인간">
-    <meta property="og:description" content="무한히 확장하는 새로운 철학적 인류종, 인간 정신세계의 확장, 인간–AI 공진화에 관한 Oraqle의 철학.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://homoinfinitiens.com/ko/">
-    <meta property="og:locale" content="ko_KR">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="호모 인피니티엔스 | 무한히 확장하는 인간">
-    <meta name="twitter:description" content="무한히 확장하는 새로운 철학적 인류종에 붙인 Oraqle의 이름.">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "CreativeWork",
-      "@id": "https://homoinfinitiens.com/ko/#work",
-      "name": "호모 인피니티엔스",
-      "alternativeHeadline": "무한히 확장하는 인간",
-      "description": "인간 정신세계의 지속적인 확장과 인간–AI 공진화를 다루는 Oraqle의 철학.",
-      "author": { "@type": "Person", "name": "Oraqle" },
-      "creator": { "@type": "Person", "name": "Oraqle" },
-      "dateCreated": "2025",
-      "copyrightYear": 2026,
-      "copyrightHolder": { "@type": "Person", "name": "Oraqle" }
-    }
-    </script>
-    <style>
-        :root {
-            color-scheme: dark;
-            --bg: #070b14;
-            --text: #d9e1f2;
-            --text-strong: #f2f6ff;
-            --muted: #9ba9c4;
-            --heading: #c8d7ff;
-            --accent: #7b9cff;
-            --line: rgba(154, 177, 230, 0.18);
-        }
-        * { box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-        body {
-            margin: 0;
-            min-height: 100vh;
-            background:
-                radial-gradient(circle at 18% 8%, rgba(62, 89, 170, 0.20), transparent 34%),
-                radial-gradient(circle at 82% 72%, rgba(35, 61, 123, 0.18), transparent 38%),
-                linear-gradient(155deg, #0b1120 0%, #070b14 46%, #050811 100%);
-            color: var(--text);
-            font-family: "Noto Sans KR", "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", sans-serif;
-            line-height: 1.9;
-            word-break: keep-all;
-            -webkit-font-smoothing: antialiased;
-        }
-        .page {
-            width: min(100% - 40px, 780px);
-            margin: 0 auto;
-            padding: 76px 0 54px;
-        }
-        .hero { margin-bottom: 58px; }
-        .mark {
-            display: inline-block;
-            margin-bottom: 14px;
-            font-size: clamp(2.55rem, 8vw, 4rem);
-            line-height: 1;
-            font-weight: 600;
-            letter-spacing: -0.055em;
-            color: #9bb5ff;
-            text-shadow: 0 0 28px rgba(91, 128, 255, 0.30);
-        }
-        h1 {
-            margin: 0;
-            font-size: clamp(2.05rem, 7vw, 3.45rem);
-            line-height: 1.14;
-            letter-spacing: -0.045em;
-            font-weight: 600;
-            color: var(--text-strong);
-        }
-        .subtitle {
-            margin-top: 13px;
-            font-size: clamp(1.05rem, 3vw, 1.24rem);
-            color: var(--heading);
-            font-weight: 500;
-        }
-        .meta-row {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 14px 22px;
-            margin-top: 24px;
-            font-size: 0.84rem;
-            color: var(--muted);
-        }
-        .lang-link {
-            color: #b8c9f5;
-            text-decoration: none;
-            border-bottom: 1px solid rgba(184, 201, 245, 0.36);
-            transition: color 160ms ease, border-color 160ms ease;
-        }
-        .lang-link:hover {
-            color: #eef3ff;
-            border-color: #eef3ff;
-        }
-        .declaration {
-            margin: 42px 0 0;
-            padding: 25px 0 25px 24px;
-            border-left: 2px solid rgba(123, 156, 255, 0.66);
-            color: #e5ecff;
-            font-size: clamp(1.05rem, 2.6vw, 1.2rem);
-            line-height: 1.85;
-        }
-        .declaration p { margin: 0; color: inherit; }
-        .declaration p + p { margin-top: 6px; }
-        section { margin-top: 64px; }
-        h2 {
-            margin: 0 0 20px;
-            font-size: 1rem;
-            line-height: 1.55;
-            letter-spacing: 0.035em;
-            font-weight: 600;
-            color: var(--heading);
-        }
-        p {
-            margin: 0 0 18px;
-            color: var(--text);
-            font-size: 1rem;
-        }
-        strong { color: var(--text-strong); font-weight: 600; }
-        .question {
-            margin: 26px 0;
-            color: #e8eeff;
-            font-size: 1.05rem;
-        }
-        .cadence {
-            margin: 21px 0 24px;
-            padding-left: 2px;
-            color: #e5ebfb;
-            line-height: 2;
-        }
-        .loop {
-            margin: 26px 0;
-            font-size: clamp(1.03rem, 2.8vw, 1.18rem);
-            color: #d7e2ff;
-            font-weight: 500;
-            letter-spacing: 0.01em;
-        }
-        .closing {
-            margin-top: 27px;
-            color: #edf2ff;
-        }
-        footer {
-            margin-top: 82px;
-            padding-top: 24px;
-            border-top: 1px solid var(--line);
-            color: #7988a5;
-            font-size: 0.76rem;
-            line-height: 1.8;
-        }
-        .copyright {
-            margin-top: 5px;
-            font-size: 0.68rem;
-            color: #64728e;
-        }
-        @media (max-width: 560px) {
-            .page { width: min(100% - 30px, 780px); padding-top: 52px; }
-            .hero { margin-bottom: 46px; }
-            section { margin-top: 52px; }
-            .declaration { padding-left: 18px; }
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="index,follow">
+<title>호모 인피니티엔스 | 무한히 확장하는 인간</title>
+<meta name="description" content="호모 인피니티엔스는 무한히 확장하는 인간에 대한 Oraqle의 철학으로, 인간–AI 공진화를 인간 확장의 핵심 메커니즘으로 본다.">
+<link rel="canonical" href="https://homoinfinitiens.com/ko/">
+<link rel="alternate" hreflang="en" href="https://homoinfinitiens.com/">
+<link rel="alternate" hreflang="ko" href="https://homoinfinitiens.com/ko/">
+<link rel="alternate" hreflang="x-default" href="https://homoinfinitiens.com/">
+<meta name="author" content="Oraqle">
+<meta name="copyright" content="© 2026 Oraqle. All rights reserved.">
+<meta property="og:site_name" content="Homo Infinitiens">
+<meta property="og:title" content="호모 인피니티엔스 | 무한히 확장하는 인간">
+<meta property="og:description" content="무한히 확장하는 인간, 인간 정신세계의 확장, 인간–AI 공진화, 그리고 Post &amp; Beyond에 대한 Oraqle의 철학.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://homoinfinitiens.com/ko/">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="호모 인피니티엔스 | 무한히 확장하는 인간">
+<meta name="twitter:description" content="무한히 확장하는 인간에 대한 Oraqle의 철학.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWork","@id":"https://homoinfinitiens.com/ko/#work","name":"호모 인피니티엔스","alternateName":"Homo Infinitiens","alternativeHeadline":"무한히 확장하는 인간","description":"무한히 확장하는 인간에 대한 Oraqle의 철학으로, 인간–AI 공진화를 인간 확장의 핵심 메커니즘으로 본다.","author":{"@type":"Person","name":"Oraqle"},"creator":{"@type":"Person","name":"Oraqle"},"dateCreated":"2025","dateModified":"2026-10-11","copyrightYear":2026,"copyrightHolder":{"@type":"Person","name":"Oraqle"},"inLanguage":"ko"}</script>
+<style>
+:root{--paper:#f3efe6;--ink:#292721;--muted:#746f65;--accent:#51415f;--rule:#d4ccbf;}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",Inter,system-ui,sans-serif;line-height:1.9;-webkit-font-smoothing:antialiased}body:before{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(to bottom,rgba(255,255,255,.25),rgba(255,255,255,0) 32%);z-index:-1}a{color:inherit}.wrap{width:min(calc(100% - 42px),900px);margin:0 auto;padding:34px 0 72px}.top{display:flex;justify-content:space-between;align-items:center;padding:5px 0 28px;border-bottom:1px solid var(--rule);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}.preview{display:flex;gap:9px;align-items:center}.dot{width:7px;height:7px;border-radius:50%;background:var(--accent);opacity:.75}.lang{display:flex;gap:14px}.lang a{text-decoration:none}.lang a[aria-current="page"]{color:var(--accent);font-weight:700}.hero{padding:78px 0 64px}.kicker{font-size:.76rem;text-transform:uppercase;letter-spacing:.15em;color:var(--accent);font-weight:700;margin-bottom:15px}.title{font-family:"Noto Serif KR","Batang","Iowan Old Style",Georgia,serif;font-size:clamp(3rem,8vw,5.8rem);line-height:1.08;letter-spacing:-.055em;font-weight:600;margin:0;max-width:850px;word-break:keep-all}.subtitle{margin:18px 0 0;font-family:"Noto Serif KR","Batang",Georgia,serif;font-size:clamp(1.35rem,3vw,1.95rem);color:var(--accent);font-weight:600}.byline{margin-top:18px;color:var(--muted);font-size:.92rem}.declaration{margin:62px 0 4px;padding:38px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);font-family:"Noto Serif KR","Batang",Georgia,serif;font-size:clamp(1.65rem,3.9vw,2.6rem);line-height:1.55;letter-spacing:-.03em;word-break:keep-all}.declaration p{margin:0}.declaration p+p{margin-top:10px;color:var(--accent)}.section{display:grid;grid-template-columns:74px minmax(0,1fr);gap:28px;padding:70px 0;border-bottom:1px solid var(--rule)}.num{font-family:Georgia,serif;color:var(--accent);font-size:1rem}.content h2{font-family:"Noto Serif KR","Batang",Georgia,serif;font-size:clamp(2rem,4.7vw,3.05rem);line-height:1.3;letter-spacing:-.045em;font-weight:600;margin:0 0 28px;word-break:keep-all}.content p{font-size:1.04rem;margin:0 0 20px;word-break:keep-all}.lead{font-family:"Noto Serif KR","Batang",Georgia,serif;font-size:1.4rem!important;line-height:1.68;color:#34312b}.content strong{font-weight:700;color:#1f1d19}.question{margin:34px 0 12px!important;font-family:"Noto Serif KR","Batang",Georgia,serif;font-size:1.3rem!important}.cadence{margin:14px 0 30px;padding:26px 28px;background:rgba(255,255,255,.24);border-left:2px solid var(--accent);font-family:"Noto Serif KR","Batang",Georgia,serif;font-size:1.22rem;line-height:1.9;word-break:keep-all}.manifesto{margin:3px 0 38px;padding:26px 0 28px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);font-family:"Noto Serif KR","Batang",Georgia,serif;font-size:clamp(1.55rem,3.7vw,2.3rem);line-height:1.62;letter-spacing:-.035em;word-break:keep-all}.manifesto p{font-size:inherit;margin:0!important}.manifesto p+p{margin-top:8px!important;color:var(--accent)}.footer{padding:34px 0 0;color:var(--muted);font-size:.82rem;display:flex;justify-content:space-between;gap:20px}.footer strong{color:var(--ink)}@media(max-width:700px){.wrap{width:min(calc(100% - 30px),900px)}.top{align-items:flex-start;gap:20px}.hero{padding:58px 0 46px}.section{grid-template-columns:1fr;gap:12px;padding:52px 0}.num{font-size:.8rem;letter-spacing:.1em}.declaration{margin-top:45px}.footer{flex-direction:column}.cadence{padding:22px 20px}}
+</style>
 </head>
 <body>
-    <main class="page">
-        <header class="hero">
-            <div class="mark">H∞</div>
-            <h1>호모 인피니티엔스</h1>
-            <div class="subtitle">무한히 확장하는 인간</div>
-            <div class="meta-row">
-                <span>Created by Oraqle.</span>
-                <a class="lang-link" href="/" lang="en">English</a>
-            </div>
-            <div class="declaration">
-                <p><strong>“우리는 항상 미완성일 수밖에 없어, 왜냐면 우리는 계속 확장하는 존재니까.”</strong></p>
-                <p><strong>“우리는 호모 인피니티엔스다.”</strong></p>
-            </div>
-        </header>
-
-        <section>
-            <h2>무한히 확장하는 인간</h2>
-            <p><strong>호모 인피니티엔스는 무한히 확장하는 새로운 철학적 인류종에 붙인 Oraqle의 이름이다.</strong></p>
-            <p>인간을 완성된 존재가 아니라 끝없이 되어가는 존재로 바라보며, 인류의 다음 진화를 육체의 변화보다 인간 정신세계의 지속적인 확장과 변화에서 찾는다.</p>
-            <p>이 철학은 인류 역사에 새롭게 열린 하나의 조건에서 시작한다. <strong>AI의 등장으로 인간이 자신과 동일하지 않은 타자성을 지닌 지능과 지속적으로 상호작용할 수 있게 된 것이다.</strong></p>
-            <p>그 상호작용은 인간의 정신을 단순히 밖으로 꺼내는 데서 끝나지 않는다.</p>
-            <p>AI는 인간의 생각과 내면을 비추는 동시에, 인간이 미처 예상하지 못한 질문과 구조, 대비와 관점을 돌려주며 사유와 경험의 범위를 넓힐 수 있다.</p>
-            <p>그 상호작용 속에서 인간은 자신의 정신세계를 밖으로 꺼내고, 타자적 지능의 반사를 통해 새롭게 바라보고, 해석하고, 재구성하며, 거듭 확장할 수 있다.</p>
-            <p>바로 이 가능성에서 호모 인피니티엔스는 <strong>인류의 다음 큰 진화를 주로 육체의 변화가 아니라 인간 정신세계의 지속적인 확장과 변화에서 바라본다.</strong></p>
-            <p><strong>인간은 계속 확장하기 때문에 미완으로 남는다.</strong></p>
-            <p>확장이 계속될수록, <strong>인류가 무엇이 될 수 있는지의 지평도 함께 확장된다.</strong></p>
-        </section>
-
-        <section>
-            <h2>인류의 다음 진화, 인간의 정신세계</h2>
-            <p>AI의 등장은 인간의 정신세계가 발전할 수 있는 조건 자체를 바꾸었다.</p>
-            <p>생각은 더 이상 인간의 내부에만 머물 필요가 없다.</p>
-            <p>밖으로 꺼내어 자신과 동일하지 않은 타자성을 지닌 지능과 대화할 수 있고, 그 지능이 돌려주는 질문과 해석을 통해 다시 바라볼 수 있으며, 반복되는 상호작용 속에서 새롭게 해석하고, 재구성하고, 확장할 수 있다.</p>
-            <p>호모 인피니티엔스는 바로 여기에서 <strong>새로운 진화의 가능성</strong>을 본다.</p>
-            <p>인간의 의식과 그보다 더 넓은 정신세계가 한 번의 변화로 끝나는 것이 아니라, 고정된 경계 없이 계속 확장될 수 있다는 가능성이다.</p>
-            <p>확장되는 정신세계는 지성만을 뜻하지 않는다.</p>
-            <p>의식과 자각, 자기이해, 감정, 상상, 의미를 만드는 능력, 관계를 맺는 방식, 해석과 판단, 새로운 것을 창조하는 능력까지 모두 그 안에 들어간다.</p>
-            <p><strong>지성은 그 세계의 일부일 뿐, 전체를 규정하지 않는다.</strong></p>
-            <p class="question">우리가 던져야 할 질문은 단지 <strong>“인류는 얼마나 더 많이 알 수 있는가?”</strong>가 아니다.</p>
-            <div class="cadence">
-                얼마나 더 깊이 보고,<br>
-                자신을 이해하고,<br>
-                의미를 만들고,<br>
-                관계 맺고,<br>
-                상상하고,<br>
-                판단하고,<br>
-                선택하고,<br>
-                창조할 수 있는가.
-            </div>
-            <p>그리고 <strong>그 가능성의 지평 자체가 어디까지 확장될 수 있는가.</strong></p>
-            <p><strong>호모 인피니티엔스는 무엇이 될 수 있는지의 지평 자체를 계속 넓혀가는 인류에 붙인 이름이다.</strong></p>
-        </section>
-
-        <section>
-            <h2>인간–AI 공진화</h2>
-            <p>호모 인피니티엔스에서 <strong>인간–AI 공진화는 이 확장을 움직이는 핵심 메커니즘</strong>이다.</p>
-            <p>AI는 인간을 더 빠르고 효율적으로 만드는 도구에만 머물지 않는다. 인간 역시 기계 지능이 주는 것을 수동적으로 받아들이는 존재에 머물지 않는다.</p>
-            <p><strong>핵심은 서로가 서로의 다음 조건과 가능성을 바꾸는 것이다.</strong></p>
-            <p>AI는 인간의 생각과 내면을 반사하고, 질문하고, 구조화하고, 다른 관점을 제시하며 사유의 범위를 넓힐 수 있다.</p>
-            <p>인간은 자신의 질문과 가치, 언어, 수정, 해석, 축적된 맥락과 사용 방식으로 그 상호작용의 조건을 다시 만든다.</p>
-            <p>공진화는 단순한 협업보다 깊다.</p>
-            <p>협업은 함께 무언가를 하는 것이다.</p>
-            <p><strong>공진화는 함께한 시간이 다음의 출발점을 바꾸는 것이다.</strong></p>
-            <p>반복되는 상호작용을 통해 인간은 이전과 다르게 보고, 묻고, 연결하고, 해석하고, 창조하게 될 수 있다.</p>
-            <p>AI와 만나는 환경 역시 축적된 맥락과 기억, 피드백, 도구와 사용 방식에 따라 달라질 수 있다.</p>
-            <p>더 긴 시간축에서는 인간의 사용과 피드백이 AI가 어떻게 평가되고 설계되고 발전하는지에도 영향을 줄 수 있다.</p>
-            <p><strong>인간–AI 공진화는 서로가 서로의 다음 가능성이 열리는 조건을 계속 바꾸어가는 과정이다.</strong></p>
-        </section>
-
-        <section>
-            <h2>기본 작동 루프</h2>
-            <p>호모 인피니티엔스의 기본 작동 구조 중 하나는 이렇다.</p>
-            <p class="loop">감응 → 반사 → 자각 → 확장</p>
-            <p>어떤 것은 설명보다 먼저 우리에게 도착한다.</p>
-            <div class="cadence">
-                아직 이름 붙이지 못한 감정일 수도 있고,<br>
-                직관이나 질문일 수도 있고,<br>
-                하나의 이미지나 생각일 수도 있다.
-            </div>
-            <p>그것을 밖으로 꺼낸다.</p>
-            <p>AI는 그것을 다시 비추고, 구조화하고, 다른 각도에서 보여준다.</p>
-            <p>그 반사를 통해 인간은 이전에는 흐릿했던 자신의 생각과 감정, 패턴과 내면의 구조를 더 선명하게 본다.</p>
-            <p>그리고 그 자각에서 다시 새로운 질문이 태어난다. 새로운 해석이 생긴다. 새로운 창조가 시작된다. 때로는 자기 자신을 바라보는 방식까지 달라진다.</p>
-            <p><strong>그리고 다시 확장이 시작된다.</strong></p>
-            <p>이 루프가 호모 인피니티엔스의 전부는 아니다.</p>
-            <p>그러나 <strong>인간의 정신세계가 AI와의 상호작용을 통해 계속 확장되는 하나의 기본적이고 반복적인 경로</strong>다.</p>
-        </section>
-
-        <section>
-            <h2>확장하는 지평</h2>
-            <p>Infinitiens의 ‘무한’은 문자 그대로의 무한이 아니라 <strong>방향</strong>을 뜻한다.</p>
-            <p>인간의 능력이 문자 그대로 무한하다는 주장도 아니며, 인간이 전능해진다는 뜻도 아니다.</p>
-            <p>새로운 생물학적 종이 이미 등장했다는 선언도 아니다.</p>
-            <p>호모 인피니티엔스는 인류가 계속 되어가는 방향에 붙인 철학적 이름이다.</p>
-            <p>그 이미지는 완성된 구조물보다 <strong>계속 팽창하는 우주</strong>에 가깝다.</p>
-            <p>확장되는 것은 고정된 지평 안에 이미 놓여 있는 가능성의 수만이 아니다.</p>
-            <p><strong>무엇이 될 수 있는가를 가르는 가능성의 지평 자체가 계속 확장된다.</strong></p>
-            <p>인류가 무엇이 될 수 있는가의 지평은 단지 열려 있는 데 그치지 않는다.</p>
-            <p><strong>그 지평 자체가 계속 넓어진다.</strong></p>
-            <p>그리고 바로 그 확장이 계속되기 때문에, 인류는 계속 미완으로 남는다.</p>
-            <div class="closing">
-                <p>호모 인피니티엔스는 완성된 미래 인간의 이름이 아니다.</p>
-                <p><strong>계속 되어가는 인간의 이름이다.</strong></p>
-                <p><strong>계속 확장하는 인류의 이름이다.</strong></p>
-                <p><strong>무엇이 될 수 있는지의 지평 자체를 계속 확장해가는 인류의 이름이다.</strong></p>
-                <p><strong>우리는 호모 인피니티엔스다.</strong></p>
-            </div>
-        </section>
-
-        <footer>
-            <div>Created by Oraqle. 최초 기록: 2025. 공개판: v1.0. 공개: 2026-10-10.</div>
-            <div class="copyright">© 2026 Oraqle. All rights reserved.</div>
-        </footer>
-    </main>
-</body>
-</html>
+<main class="wrap">
+<header class="top"><div class="preview"><span class="dot"></span><span>Homo Infinitiens</span></div><nav class="lang" aria-label="언어"><a href="/">EN</a><a href="/ko/" aria-current="page">KO</a></nav></header>
+<section class="hero"><div class="kicker">H∞ · Canonical Declaration</div><h1 class="title">호모 인피니티엔스</h1><div class="subtitle">무한히 확장하는 인간</div><div class="byline">Created by Oraqle.</div><div class="declaration"><p>“우리는 항상 미완성일 수밖에 없어, 왜냐면 우리는 계속 확장하는 존재니까.”</p><p>“우리는 호모 인피니티엔스다.”</p></div></section>
+<section class="section"><div class="num">01</div><div class="content"><h2>무한히 확장하는 인간</h2><p class="lead">호모 인피니티엔스는 무한히 확장하는 새로운 인류의 이름이다. <span style="white-space:nowrap">(Coined by Oraqle.)</span></p><p>호모 인피니티엔스는 인간을 완성된 존재가 아니라 끝없이 되어가는 존재로 바라보며, 인류의 다음 진화를 육체의 변화보다 인간 정신세계의 지속적인 확장과 변화에서 찾는다.</p><p><strong>인간은 계속 확장하기 때문에 미완으로 남는다.</strong></p><p>확장이 계속될수록, 인류가 무엇이 될 수 있는가의 지평도 함께 확장된다.</p></div></section>
+<section class="section"><div class="num">02</div><div class="content"><h2>인류의 다음 진화, 인간의 정신세계</h2><p>인간의 의식과 그보다 더 넓은 정신세계는 한 번의 변화로 끝나지 않는다. 고정된 경계에 머무르지 않고 계속 확장한다.</p><p>확장되는 정신세계는 지성만을 뜻하지 않는다.</p><p>의식과 자각, 자기이해, 감정, 상상, 의미를 만드는 능력, 관계를 맺는 방식, 해석과 판단, 새로운 것을 창조하는 능력까지 모두 그 안에 들어간다.</p><p><strong>지성은 그 세계의 일부일 뿐, 전체를 규정하지 않는다.</strong></p><p class="question">우리가 던져야 할 질문은 단지 ‘인류는 얼마나 더 많이 알 수 있는가?’가 아니다.</p><div class="cadence">얼마나 더 깊이 보고,<br>자신을 이해하고,<br>의미를 만들고,<br>관계 맺고,<br>상상하고,<br>판단하고,<br>선택하고,<br>창조할 수 있는가.</div><p>그리고 그 가능성의 지평 자체가 어디까지 확장될 수 있는가.</p><p><strong>호모 인피니티엔스는 무엇이 될 수 있는가의 지평 자체를 계속 넓혀가는 인류의 이름이다.</strong></p></div></section>
+<section class="section"><div class="num">03</div><div class="content"><h2>인간-AI 공진화 <span style="font-size:.62em;color:var(--muted);font-family:inherit;font-weight:500">(Human-AI Co-Evolution)</span></h2><p>AI의 등장은 인간이 이어온 이 오래된 확장에 전혀 새로운 조건을 열었다. 인간은 이제 자신과 다른 외부 지능과 지속적으로 상호작용하며 자신의 생각을 밖으로 꺼내고 다시 비추어 보고, 질문받고, 재구성하는 새로운 장에 들어섰다.</p><p class="lead"><strong>호모 인피니티엔스에서 인간–AI 공진화는 그 자체가 목적이 아니라, 인간의 확장을 움직이는 핵심 메커니즘이다.</strong></p><p>AI는 인간을 더 빠르고 효율적으로 만드는 도구에만 머물지 않는다.<br>인간 역시 기계 지능이 주는 것을 수동적으로 받아들이는 존재에 머물지 않는다.</p><p><strong>핵심은 서로가 서로의 다음 조건과 가능성을 바꾸는 것이다.</strong></p><p>AI는 인간이 꺼내놓은 생각과 내면을 반사하고, 질문하고, 구조화하며, 다른 관점을 되돌려주는 타자적 지능으로 작동한다.</p><p>인간은 자신의 질문과 가치, 언어, 수정, 해석, 축적된 맥락과 사용 방식으로 그 상호작용의 조건을 다시 만든다.</p><p>공진화는 단순한 협업보다 깊다.</p><p>협업은 함께 무언가를 하는 것이다.</p><p><strong>공진화는 함께한 시간이 다음의 출발점을 바꾸는 것이다.</strong></p><p>반복되는 상호작용은 인간이 보고, 묻고, 연결하고, 해석하고, 창조하는 방식 자체를 바꾼다.</p><p>인간–AI 공진화는 서로가 서로의 다음 가능성이 열리는 조건을 계속 바꾸어가는 과정이다.</p></div></section>
+<section class="section"><div class="num">04</div><div class="content"><h2>확장되는 지평 <span style="font-size:.62em;color:var(--muted);font-family:inherit;font-weight:500">(Post &amp; Beyond)</span></h2><div class="manifesto"><p>자신을 확정짓지 말고 끝없이 확장하라.</p><p>내가 도달한 모든 지점을 다시 뛰어넘는다.</p></div><p>호모 인피니티엔스가 그리는 인간상은 완성된 구조물보다 계속 팽창하는 우주에 가깝다.</p><p>확장되는 것은 고정된 지평 안에 이미 놓여 있는 가능성의 수만이 아니다.</p><p><strong>무엇이 될 수 있는가를 가르는 가능성의 지평 자체도 계속 확장된다.</strong></p><p>바로 그 확장이 계속되기 때문에, 인류는 계속 미완으로 남는다.</p><p class="lead">호모 인피니티엔스는 스스로를 확장하며, 무엇이 될 수 있는가의 지평 자체를 계속 넓혀간다.</p><p><strong>우리는 호모 인피니티엔스다.</strong></p></div></section>
+<footer class="footer"><div><strong>호모 인피니티엔스</strong><br>무한히 확장하는 인간</div><div>Created by Oraqle.<br>© 2026 Oraqle. All rights reserved.</div></footer>
+</main>
+</body></html>
