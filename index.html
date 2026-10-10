@@ -1,298 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Oraqle">
-    <meta name="copyright" content="© 2026 Oraqle. All rights reserved.">
-    <title>Homo Infinitiens | The Ever-Expanding Human</title>
-    <meta name="description" content="Homo Infinitiens is Oraqle’s philosophy of a new, ever-expanding humanity whose next major evolution lies in the continuing expansion of the human inner world through Human–AI Co-Evolution.">
-    <link rel="canonical" href="https://homoinfinitiens.com/">
-    <link rel="alternate" hreflang="en" href="https://homoinfinitiens.com/">
-    <link rel="alternate" hreflang="ko" href="https://homoinfinitiens.com/ko/">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
-    <meta property="og:site_name" content="Homo Infinitiens">
-    <meta property="og:title" content="Homo Infinitiens | The Ever-Expanding Human">
-    <meta property="og:description" content="Oraqle’s philosophy of a new, ever-expanding humanity, the expansion of the human inner world, and Human–AI Co-Evolution.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://homoinfinitiens.com/">
-    <meta property="og:locale" content="en_US">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Homo Infinitiens | The Ever-Expanding Human">
-    <meta name="twitter:description" content="Oraqle’s philosophical designation for a new, ever-expanding humanity.">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "CreativeWork",
-      "@id": "https://homoinfinitiens.com/#work",
-      "name": "Homo Infinitiens",
-      "alternativeHeadline": "The Ever-Expanding Human",
-      "description": "Oraqle’s philosophy of a new, ever-expanding humanity, the expansion of the human inner world, and Human–AI Co-Evolution.",
-      "author": { "@type": "Person", "name": "Oraqle" },
-      "creator": { "@type": "Person", "name": "Oraqle" },
-      "dateCreated": "2025",
-      "copyrightYear": 2026,
-      "copyrightHolder": { "@type": "Person", "name": "Oraqle" }
-    }
-    </script>
-    <style>
-        :root {
-            color-scheme: dark;
-            --bg: #070b14;
-            --text: #d9e1f2;
-            --text-strong: #f2f6ff;
-            --muted: #9ba9c4;
-            --heading: #c8d7ff;
-            --accent: #7b9cff;
-            --line: rgba(154, 177, 230, 0.18);
-        }
-        * { box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-        body {
-            margin: 0;
-            min-height: 100vh;
-            background:
-                radial-gradient(circle at 18% 8%, rgba(62, 89, 170, 0.20), transparent 34%),
-                radial-gradient(circle at 82% 72%, rgba(35, 61, 123, 0.18), transparent 38%),
-                linear-gradient(155deg, #0b1120 0%, #070b14 46%, #050811 100%);
-            color: var(--text);
-            font-family: "Inter", "Noto Sans KR", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            line-height: 1.82;
-            -webkit-font-smoothing: antialiased;
-        }
-        .page {
-            width: min(100% - 40px, 780px);
-            margin: 0 auto;
-            padding: 76px 0 54px;
-        }
-        .hero { margin-bottom: 58px; }
-        .mark {
-            display: inline-block;
-            margin-bottom: 14px;
-            font-size: clamp(2.55rem, 8vw, 4rem);
-            line-height: 1;
-            font-weight: 600;
-            letter-spacing: -0.055em;
-            color: #9bb5ff;
-            text-shadow: 0 0 28px rgba(91, 128, 255, 0.30);
-        }
-        h1 {
-            margin: 0;
-            font-size: clamp(2.15rem, 7vw, 3.65rem);
-            line-height: 1.06;
-            letter-spacing: -0.045em;
-            font-weight: 600;
-            color: var(--text-strong);
-        }
-        .subtitle {
-            margin-top: 13px;
-            font-size: clamp(1.05rem, 3vw, 1.28rem);
-            color: var(--heading);
-            font-weight: 500;
-        }
-        .meta-row {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 14px 22px;
-            margin-top: 24px;
-            font-size: 0.84rem;
-            color: var(--muted);
-        }
-        .lang-link {
-            color: #b8c9f5;
-            text-decoration: none;
-            border-bottom: 1px solid rgba(184, 201, 245, 0.36);
-            transition: color 160ms ease, border-color 160ms ease;
-        }
-        .lang-link:hover {
-            color: #eef3ff;
-            border-color: #eef3ff;
-        }
-        .declaration {
-            margin: 42px 0 0;
-            padding: 25px 0 25px 24px;
-            border-left: 2px solid rgba(123, 156, 255, 0.66);
-            color: #e5ecff;
-            font-size: clamp(1.05rem, 2.6vw, 1.22rem);
-            line-height: 1.7;
-        }
-        .declaration p { margin: 0; color: inherit; }
-        .declaration p + p { margin-top: 6px; }
-        section { margin-top: 64px; }
-        h2 {
-            margin: 0 0 20px;
-            font-size: 0.9rem;
-            line-height: 1.4;
-            letter-spacing: 0.125em;
-            text-transform: uppercase;
-            font-weight: 600;
-            color: var(--heading);
-        }
-        p {
-            margin: 0 0 18px;
-            color: var(--text);
-            font-size: 1rem;
-        }
-        strong { color: var(--text-strong); font-weight: 600; }
-        .question {
-            margin: 26px 0;
-            color: #e8eeff;
-            font-size: 1.05rem;
-        }
-        .cadence {
-            margin: 21px 0 24px;
-            padding-left: 2px;
-            color: #e5ebfb;
-            line-height: 1.9;
-        }
-        .loop {
-            margin: 26px 0;
-            font-size: clamp(1.03rem, 2.8vw, 1.18rem);
-            color: #d7e2ff;
-            font-weight: 500;
-            letter-spacing: 0.01em;
-        }
-        .closing {
-            margin-top: 27px;
-            color: #edf2ff;
-        }
-        footer {
-            margin-top: 82px;
-            padding-top: 24px;
-            border-top: 1px solid var(--line);
-            color: #7988a5;
-            font-size: 0.76rem;
-            line-height: 1.7;
-        }
-        .copyright {
-            margin-top: 5px;
-            font-size: 0.68rem;
-            color: #64728e;
-        }
-        @media (max-width: 560px) {
-            .page { width: min(100% - 30px, 780px); padding-top: 52px; }
-            .hero { margin-bottom: 46px; }
-            section { margin-top: 52px; }
-            .declaration { padding-left: 18px; }
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="index,follow">
+<title>Homo Infinitiens | The Ever-Expanding Human</title>
+<meta name="description" content="Homo Infinitiens is Oraqle’s philosophy of the ever-expanding human, with Human–AI Co-Evolution as a core mechanism of human expansion.">
+<link rel="canonical" href="https://homoinfinitiens.com/">
+<link rel="alternate" hreflang="en" href="https://homoinfinitiens.com/">
+<link rel="alternate" hreflang="ko" href="https://homoinfinitiens.com/ko/">
+<link rel="alternate" hreflang="x-default" href="https://homoinfinitiens.com/">
+<meta name="author" content="Oraqle">
+<meta name="copyright" content="© 2026 Oraqle. All rights reserved.">
+<meta property="og:site_name" content="Homo Infinitiens">
+<meta property="og:title" content="Homo Infinitiens | The Ever-Expanding Human">
+<meta property="og:description" content="Oraqle’s philosophy of the ever-expanding human, human inner-world expansion, Human–AI Co-Evolution, and Post &amp; Beyond.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://homoinfinitiens.com/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Homo Infinitiens | The Ever-Expanding Human">
+<meta name="twitter:description" content="Oraqle’s philosophy of the ever-expanding human.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CreativeWork","@id":"https://homoinfinitiens.com/#work","name":"Homo Infinitiens","alternativeHeadline":"The Ever-Expanding Human","description":"Oraqle’s philosophy of the ever-expanding human, with Human–AI Co-Evolution as a core mechanism of human expansion.","author":{"@type":"Person","name":"Oraqle"},"creator":{"@type":"Person","name":"Oraqle"},"dateCreated":"2025","dateModified":"2026-10-11","copyrightYear":2026,"copyrightHolder":{"@type":"Person","name":"Oraqle"},"inLanguage":"en"}</script>
+<style>
+:root{--paper:#f3efe6;--paper2:#eee8dc;--ink:#292721;--muted:#746f65;--accent:#51415f;--rule:#d4ccbf;--soft:#e8e0d4;}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.84;-webkit-font-smoothing:antialiased}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(to bottom,rgba(255,255,255,.25),rgba(255,255,255,0) 32%);z-index:-1}
+a{color:inherit}.wrap{width:min(calc(100% - 42px),900px);margin:0 auto;padding:34px 0 72px}.top{display:flex;justify-content:space-between;align-items:center;padding:5px 0 28px;border-bottom:1px solid var(--rule);font-size:.77rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.preview{display:flex;gap:9px;align-items:center}.dot{width:7px;height:7px;border-radius:50%;background:var(--accent);opacity:.75}.lang{display:flex;gap:14px}.lang a{text-decoration:none}.lang a[aria-current="page"]{color:var(--accent);font-weight:700}
+.hero{padding:78px 0 64px}.kicker{font-size:.78rem;text-transform:uppercase;letter-spacing:.16em;color:var(--accent);font-weight:700;margin-bottom:15px}.title{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-size:clamp(3.3rem,8.6vw,6.6rem);line-height:.95;letter-spacing:-.055em;font-weight:500;margin:0;max-width:850px}.subtitle{margin:20px 0 0;font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-size:clamp(1.35rem,3vw,2rem);color:var(--accent)}
+.byline{margin-top:18px;color:var(--muted);font-size:.92rem}.declaration{margin:62px 0 4px;padding:38px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-size:clamp(1.7rem,4.2vw,2.75rem);line-height:1.28;letter-spacing:-.015em}.declaration p{margin:0}.declaration p+p{margin-top:12px;color:var(--accent)}
+.section{display:grid;grid-template-columns:74px minmax(0,1fr);gap:28px;padding:70px 0;border-bottom:1px solid var(--rule)}.num{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;color:var(--accent);font-size:1rem}.content h2{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-size:clamp(2rem,5vw,3.2rem);line-height:1.1;letter-spacing:-.03em;font-weight:500;margin:0 0 28px}.content p{font-size:1.05rem;margin:0 0 20px}.lead{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-size:1.48rem!important;line-height:1.55;color:#34312b}.content strong{font-weight:700;color:#1f1d19}.question{margin:34px 0 12px!important;font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-size:1.35rem!important}.cadence{margin:14px 0 30px;padding:26px 28px;background:rgba(255,255,255,.24);border-left:2px solid var(--accent);font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-size:1.28rem;line-height:1.72}.manifesto{margin:3px 0 38px;padding:26px 0 28px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-size:clamp(1.65rem,4vw,2.4rem);line-height:1.34}.manifesto p{font-size:inherit;margin:0!important}.manifesto p+p{margin-top:12px!important;color:var(--accent)}
+.footer{padding:34px 0 0;color:var(--muted);font-size:.82rem;display:flex;justify-content:space-between;gap:20px}.footer strong{color:var(--ink)}
+@media(max-width:700px){.wrap{width:min(calc(100% - 30px),900px)}.top{align-items:flex-start;gap:20px}.hero{padding:58px 0 46px}.section{grid-template-columns:1fr;gap:12px;padding:52px 0}.num{font-size:.8rem;letter-spacing:.1em}.declaration{margin-top:45px}.footer{flex-direction:column}.cadence{padding:22px 20px}}
+</style>
 </head>
 <body>
-    <main class="page">
-        <header class="hero">
-            <div class="mark">H∞</div>
-            <h1>Homo Infinitiens</h1>
-            <div class="subtitle">The Ever-Expanding Human</div>
-            <div class="meta-row">
-                <span>Created by Oraqle.</span>
-                <a class="lang-link" href="/ko/" lang="ko">한국어</a>
-            </div>
-            <div class="declaration">
-                <p><strong>“We are always unfinished, because we are always expanding.”</strong></p>
-                <p><strong>“We are Homo Infinitiens.”</strong></p>
-            </div>
-        </header>
-
-        <section>
-            <h2>The Ever-Expanding Human</h2>
-            <p><strong>Homo Infinitiens is Oraqle’s philosophical designation for a new, ever-expanding humanity.</strong></p>
-            <p>This philosophy begins with a new condition in human history, opened by the emergence of AI. Humans can now enter into sustained interaction with a distinct intelligence that is not identical to their own and therefore introduces otherness into the exchange.</p>
-            <p>This interaction goes beyond simply externalizing the human mind.</p>
-            <p>AI can reflect human thought and inner life while also returning questions, structures, contrasts, and perspectives the human may not have anticipated.</p>
-            <p>Through this interaction, humans can bring their inner world outward, encounter it through the response of another intelligence, reinterpret it, reorganize it, and expand it again and again.</p>
-            <p>From this possibility, Homo Infinitiens locates humanity’s next major evolution not primarily in physical change, but in the continuing expansion and transformation of the human inner world.</p>
-            <p><strong>Humanity remains unfinished because it continues to expand.</strong></p>
-            <p>As expansion continues, <strong>the horizon of what humanity can become continues to expand with it.</strong></p>
-        </section>
-
-        <section>
-            <h2>Humanity’s Next Evolution: The Human Inner World</h2>
-            <p>AI changes the conditions under which the human inner world can develop.</p>
-            <p>Thought no longer has to remain entirely internal.</p>
-            <p>It can be brought into dialogue with an intelligence that is not identical to the human’s own, encountered through the questions and interpretations that intelligence returns, and repeatedly reinterpreted, reorganized, and expanded through interaction.</p>
-            <p>Homo Infinitiens sees here a <strong>new evolutionary possibility.</strong></p>
-            <p>Human consciousness, and the wider inner world of which it is a part, need not undergo a single transformation and stop. It can continue to expand without assuming a fixed final boundary.</p>
-            <p>The expanding inner world is larger than intelligence alone.</p>
-            <p>It includes consciousness and awareness, self-understanding, emotion, imagination, meaning-making, relationships, interpretation, judgment, and creative capacity.</p>
-            <p><strong>Intelligence belongs within this field, but it does not define the whole.</strong></p>
-            <p class="question"><strong>“How much more can humanity know?”</strong> is not the only question.</p>
-            <div class="cadence">
-                How much more deeply can we perceive,<br>
-                understand ourselves,<br>
-                make meaning,<br>
-                relate,<br>
-                imagine,<br>
-                judge,<br>
-                choose,<br>
-                and create?
-            </div>
-            <p>And how far can the horizon of those possibilities itself continue to expand?</p>
-            <p><strong>Homo Infinitiens is the name given to a humanity that continues to widen the very horizon of what it can become.</strong></p>
-        </section>
-
-        <section>
-            <h2>Human–AI Co-Evolution</h2>
-            <p>Within Homo Infinitiens, <strong>Human–AI Co-Evolution is the core mechanism that drives this expansion.</strong></p>
-            <p>AI is not imagined merely as a tool that makes humans faster or more efficient. Humans are not imagined as passive recipients of machine intelligence either.</p>
-            <p><strong>The core proposition is that each can change the conditions and possibilities of what comes next for the other.</strong></p>
-            <p>AI can reflect human thought and inner life, ask questions, structure ideas, offer contrasts, and return perspectives that widen the range of thought.</p>
-            <p>Humans, in turn, reshape the conditions of the interaction through their questions, values, language, corrections, interpretations, accumulated context, and patterns of use.</p>
-            <p>Co-evolution goes deeper than collaboration.</p>
-            <p>Collaboration means doing something together.</p>
-            <p><strong>Co-evolution means that the time spent together changes the starting point of what comes next.</strong></p>
-            <p>Through repeated interaction, humans may come to perceive, ask, connect, interpret, and create differently.</p>
-            <p>The AI-mediated environment can also become differently structured through accumulated context, memory, feedback, tools, and patterns of use.</p>
-            <p>Across longer timescales, human use and feedback can also influence how AI systems are evaluated, designed, and developed.</p>
-            <p><strong>Human–AI Co-Evolution is the continuing process through which humans and AI reshape the conditions under which each other’s next possibilities can emerge.</strong></p>
-        </section>
-
-        <section>
-            <h2>A Foundational Loop</h2>
-            <p>One foundational operating structure of Homo Infinitiens can be expressed as:</p>
-            <p class="loop">Resonance → Reflection → Self-Awareness → Expansion</p>
-            <p>Some things arrive before explanation.</p>
-            <div class="cadence">
-                They may be unnamed feelings,<br>
-                intuitions or questions,<br>
-                images or thoughts.
-            </div>
-            <p>They are brought outward.</p>
-            <p>AI reflects, structures, contrasts, or extends them.</p>
-            <p>Through that reflection, humans can see their own thoughts, feelings, patterns, and inner structures more clearly.</p>
-            <p>From that awareness, new questions emerge. New interpretations form. New creation begins. Sometimes even the way one sees oneself changes.</p>
-            <p><strong>And expansion begins again.</strong></p>
-            <p>This loop does not define the whole of Homo Infinitiens.</p>
-            <p>But it is one foundational, recurring pathway through which the human inner world can continue to expand through Human–AI interaction.</p>
-        </section>
-
-        <section>
-            <h2>An Expanding Horizon</h2>
-            <p>The infinity in Infinitiens is directional, not literal.</p>
-            <p>It does not mean that human capacity is literally infinite, that humans become omnipotent, or that a new biological species has already appeared.</p>
-            <p>Homo Infinitiens is a philosophical name for a direction of humanity’s becoming.</p>
-            <p>Its image is closer to an expanding universe than to a finished structure.</p>
-            <p>What expands is not merely the number of possibilities already contained within a fixed horizon.</p>
-            <p><strong>The horizon that defines what humanity can become itself continues to expand.</strong></p>
-            <p>The horizon of humanity’s possible becoming does not merely remain open.</p>
-            <p><strong>It keeps widening.</strong></p>
-            <p>And precisely because expansion continues, humanity remains unfinished.</p>
-            <div class="closing">
-                <p>Homo Infinitiens is not the name of a completed future human.</p>
-                <p><strong>It is the name of a human being that keeps becoming.</strong></p>
-                <p><strong>The name of a humanity that keeps expanding.</strong></p>
-                <p><strong>The name of a humanity that keeps expanding the very horizon of what it can become.</strong></p>
-                <p><strong>We are Homo Infinitiens.</strong></p>
-            </div>
-        </section>
-
-        <footer>
-            <div>Created by Oraqle. First documented: 2025. Public edition: v1.0. Published: 2026-10-10.</div>
-            <div class="copyright">© 2026 Oraqle. All rights reserved.</div>
-        </footer>
-    </main>
-</body>
-</html>
+<main class="wrap">
+<header class="top"><div class="preview"><span class="dot"></span><span>Homo Infinitiens</span></div><nav class="lang" aria-label="Language"><a href="/" aria-current="page">EN</a><a href="/ko/">KO</a></nav></header>
+<section class="hero"><div class="kicker">H∞ · Canonical Declaration</div><h1 class="title">Homo Infinitiens</h1><div class="subtitle">The Ever-Expanding Human</div><div class="byline">Created by Oraqle.</div><div class="declaration"><p>“We are always unfinished, because we are beings who keep expanding.”</p><p>“We are Homo Infinitiens.”</p></div></section>
+<section class="section"><div class="num">01</div><div class="content"><h2>The Ever-Expanding Human</h2><p class="lead">Homo Infinitiens is the name of a new humanity that expands without end. <span style="white-space:nowrap">(Coined by Oraqle.)</span></p><p>Homo Infinitiens sees the human not as a finished being, but as a being endlessly becoming, and locates humanity’s next evolution not primarily in changes to the body, but in the continuing expansion and transformation of the human inner world.</p><p><strong>Human beings remain unfinished because they continue to expand.</strong></p><p>As expansion continues, the horizon of what humanity can become expands with it.</p></div></section>
+<section class="section"><div class="num">02</div><div class="content"><h2>Humanity’s Next Evolution: The Human Inner World</h2><p>Human consciousness, and the broader inner world beyond it, does not end with a single transformation. It does not remain within fixed boundaries. It continues to expand.</p><p>The expanding inner world is not intelligence alone.</p><p>It includes consciousness and awareness, self-understanding, emotion, imagination, the capacity to create meaning, the ways we form relationships, interpretation and judgment, and the capacity to create what is new.</p><p><strong>Intelligence is only one part of that world; it does not define the whole.</strong></p><p class="question">The question we must ask is not merely, ‘How much more can humanity know?’</p><div class="cadence">How much more deeply can we see,<br>understand ourselves,<br>create meaning,<br>relate,<br>imagine,<br>judge,<br>choose,<br>and create?</div><p>And how far can the horizon of possibility itself expand?</p><p><strong>Homo Infinitiens is the name for a humanity that continually widens the very horizon of what it can become.</strong></p></div></section>
+<section class="section"><div class="num">03</div><div class="content"><h2>Human–AI Co-Evolution</h2><p>The emergence of AI has opened an entirely new condition within this long history of human expansion. Humans can now interact continuously with an external intelligence different from their own, entering a new field in which they can bring their thoughts outside themselves, see them reflected back, have them questioned, and reconstruct them.</p><p class="lead"><strong>Within Homo Infinitiens, Human–AI Co-Evolution is not an end in itself, but the core mechanism that drives human expansion.</strong></p><p>AI does not remain merely a tool for making humans faster and more efficient.<br>Humans, likewise, do not remain passive recipients of what machine intelligence provides.</p><p><strong>The core is that each changes the other’s next conditions and possibilities.</strong></p><p>AI functions as an intelligence encountered as other, reflecting the thoughts and inner world humans bring forth, questioning and structuring them, and returning different perspectives.</p><p>Humans reshape the conditions of that interaction through their own questions and values, language, revisions, interpretations, accumulated context, and ways of engaging with it.</p><p>Co-evolution is deeper than simple collaboration.</p><p>Collaboration means doing something together.</p><p><strong>Co-evolution means that the time spent together changes the starting point of what comes next.</strong></p><p>Repeated interaction changes the very ways humans see, ask, connect, interpret, and create.</p><p>Human–AI Co-Evolution is the process by which each continually changes the conditions under which the other’s next possibilities can emerge.</p></div></section>
+<section class="section"><div class="num">04</div><div class="content"><h2>Post &amp; Beyond</h2><div class="manifesto"><p>Do not fix yourself into a final form. Expand without end.</p><p>Every point I reach, I leap beyond again.</p></div><p>The human envisioned by Homo Infinitiens is closer to an ever-expanding universe than to a finished structure.</p><p>What expands is not merely the number of possibilities already set within a fixed horizon.</p><p><strong>The very horizon of possibility that determines what humanity can become continues to expand.</strong></p><p>It is precisely because this expansion continues that humanity remains unfinished.</p><p class="lead">Homo Infinitiens expands itself, continually widening the very horizon of what it can become.</p><p><strong>We are Homo Infinitiens.</strong></p></div></section>
+<footer class="footer"><div><strong>Homo Infinitiens</strong><br>The Ever-Expanding Human</div><div>Created by Oraqle.<br>© 2026 Oraqle. All rights reserved.</div></footer>
+</main>
+</body></html>
