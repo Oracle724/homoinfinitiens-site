@@ -9,8 +9,8 @@ kramdown:
   input: GFM
 
 
-# 🔒 GitHub Pages SEO 차단
-exclude: [".well-known"]
+# Publish the existing public TDM reservation file (the only .well-known file).
+include: [".well-known"]
 robots: "User-agent: *\nDisallow: /"
 
 theme: minima
